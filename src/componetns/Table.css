@@ -1,0 +1,21 @@
+table {
+  border: 1px solid black;
+  margin-top: 2%;
+}
+
+thead {
+  background-color: darkslategray;
+}
+
+thead th {
+  border: 1px solid crimson;
+  color: aliceblue;
+}
+
+tbody tr:nth-child( odd ) {
+  background-color: darkturquoise;
+}
+
+tbody tr:nth-child( even ) {
+  background-color: lightsalmon;
+}
