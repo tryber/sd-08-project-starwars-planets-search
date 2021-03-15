@@ -4,7 +4,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e
 
 # Boas vindas ao repositório do projeto Starwars Planets Search em context api e hooks!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv  🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
@@ -35,7 +35,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [3 - Crie um filtro para valores numéricos](#3---crie-um-filtro-para-valores-numéricos)
     - [4 - Não utilize filtros repetidos](#4---não-utilize-filtros-repetidos)
     - [5 - Apague o filtro de valores numéricos e desfaça as filtragens dos dados da tabela ao clicar no ícone de X de um dos filtros](#5---apague-o-filtro-de-valores-numéricos-e-desfaça-as-filtragens-dos-dados-da-tabela-ao-clicar-no-ícone-de-x-de-um-dos-filtros)
-    
+
     `Requisitos bônus:`
     - [6 - Ordene as colunas de forma ascendente ou descendente](#6---ordene-as-colunas-de-forma-ascendente-ou-descendente)
 - [Avisos Finais](#avisos-finais)
@@ -73,7 +73,7 @@ Este repositório já contém um _template_ de uma aplicação React criado e co
   - Projeto individual.
 
   - Serão `2` dias de projeto.
-  
+
   - Data de entrega para avaliação final do projeto: `23/03/2021 - 14:00h`.
 
 ---
