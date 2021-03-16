@@ -1,18 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 
 import PlanetsContext from './Contexts/PlanetsContext';
 
 function Table() {
-  const { data, getPlanets, isRequesting } = useContext(PlanetsContext);
+  const { data, isRequesting } = useContext(PlanetsContext);
 
-  useEffect(() => {
-    console.log('Table - Effect');
-    if (!data && !isRequesting) {
-      getPlanets();
-    }
-  }, [data, getPlanets, isRequesting]);
-
-  // if (isRequesting) return <p>Loading...</p>;
+  if (isRequesting) return <p>Loading...</p>;
 
   return (
     <table className="table table-hover table-bordered table-dark">
@@ -35,7 +28,7 @@ function Table() {
           <th scope="col" className="align-middle text-center">URL</th>
         </tr>
       </thead>
-      {/* <tbody>
+      <tbody>
         {data.map((planet, index) => (
           <tr key={ planet.name }>
             <th scope="row">{index + 1}</th>
@@ -48,12 +41,14 @@ function Table() {
             <td className="align-middle">{planet.terrain}</td>
             <td className="align-middle">{planet.surface_water}</td>
             <td className="align-middle">{planet.population}</td>
-            <td className="align-middle">{planet.films}</td>
+            <td className="align-middle">
+              {planet.films.map((filme) => (<div key={ filme }>{filme}</div>))}
+            </td>
             <td className="align-middle">{planet.created}</td>
             <td className="align-middle">{planet.edited}</td>
             <td className="align-middle">{planet.url}</td>
           </tr>))}
-      </tbody> */}
+      </tbody>
     </table>
   );
 }

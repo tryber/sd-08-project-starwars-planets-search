@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import fetchInfoAPI from '../../Services/PlanetAPI';
@@ -10,12 +10,14 @@ function PlanetsProvider({ children }) {
 
   const getPlanets = async () => {
     setIsRequesting(true);
-    const { results } = await fetchInfoAPI();
-    console.log(...results);
-    setData([...results]);
+    const planets = await fetchInfoAPI();
+    // console.log(planets);
+    setData([...planets]);
     setIsRequesting(false);
   };
 
+  useEffect(() => { getPlanets(); }, []);
+  // console.log(data);
   return (
     <PlanetsContext.Provider value={ { isRequesting, data, getPlanets } }>
       {children}
