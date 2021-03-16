@@ -1,41 +1,139 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #095;
+  color: white;
+  margin: 0;
+  padding: 0.5em 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  align-items: center;
-  background-color: #282c34;
+.filter {
+  background-color: #902;
+  box-shadow: 0 4px 20px 0 #222;
   color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
+  display: grid;
+  font-weight: 700;
+  grid-row-gap: 0.5em;
+  grid-template-areas: 'nm nm nm nm ord asc desc ordbtn'
+    'cl cmp vl fbt . . . .';
+  grid-template-columns: repeat(8, fit-content(200px));
+  margin: 0;
+  padding: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+
+  --button-bg-color: #095;
+
+  --button-color: white;
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 1em;
+  color: var(--button-color);
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 0 1em;
+  outline: none;
+  transition: all 0.3s;
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
+.filter select, input {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: inherit;
+  margin-left: 0.2em;
+  padding: 0.4em;
+}
 
-  from {
-    transform: rotate(0deg);
-  }
+.filter select {
+  height: 100%;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+  border: 1px solid #095;
+  outline: none;
+}
+
+button:hover, button:focus {
+  background-color: var(--button-color);
+  box-shadow: 0 4px 10px 0 #222;
+  color: var(--button-bg-color);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+
+.filter label:nth-child( 1 ) {
+  grid-area: nm;
+}
+
+.filter label:nth-child( 2 ) {
+  grid-area: cl;
+}
+
+.filter label:nth-child( 3 ) {
+  grid-area: cmp;
+}
+
+.filter label:nth-child( 4 ) {
+  grid-area: vl;
+}
+
+.filter button:first-of-type {
+  grid-area: fbt;
+}
+
+.filter label:nth-child( 6 ) {
+  grid-area: ord;
+  margin-right: 10px;
+}
+
+.filter label:nth-child( 7 ) {
+  align-items: baseline;
+  display: inline-flex;
+  grid-area: asc;
+  justify-content: space-between;
+  margin-left: 1em;
+  width: 4.5em;
+}
+
+.filter label:nth-child( 8 ) {
+  grid-area: desc;
+  margin-left: 1em;
+}
+
+.filter button:last-of-type {
+  grid-area: ordbtn;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+  box-shadow: 0 4px 20px 0 #222;
+  padding: 1em;
+}
+
+table thead {
+  background-color: #095;
+}
+
+table td, table th {
+  padding: 0.4em 0;
+  text-align: center;
+}
+
+table tr:nth-of-type( 2n ) {
+  background-color: #eee;
 }
