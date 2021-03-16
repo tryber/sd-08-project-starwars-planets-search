@@ -1,9 +1,14 @@
 import React from 'react';
-import './App.css';
+import Table from './Components/Table';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <main>
+      {/* <Header /> */}
+      <Table />
+    </main>
   );
 }
 
