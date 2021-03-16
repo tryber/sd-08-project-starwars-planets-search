@@ -1,0 +1,12 @@
+.form-filter select, .form-filter input {
+  margin: 3px;
+  padding: 5px;
+  width: 10vw;
+}
+
+.form-filter button {
+  background: green;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+}

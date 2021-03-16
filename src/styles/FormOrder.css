@@ -1,0 +1,12 @@
+.form-order select, .form-order input {
+  margin: 3px;
+  padding: 5px;
+}
+
+.form-order button {
+  background: green;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
+}

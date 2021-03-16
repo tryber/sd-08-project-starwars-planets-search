@@ -1,0 +1,28 @@
+.header {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-evenly;
+  padding: 10px 0 0 0;
+}
+
+.header h1 {
+  color: black;
+  font-family: Bungee , cursive;
+  font-size: 5vw;
+  text-shadow: 0 0 2px yellow;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 99vw;
+}
+
+.header input {
+  margin: 5px;
+  padding: 5px;
+}

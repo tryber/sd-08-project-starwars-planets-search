@@ -1,0 +1,55 @@
+.filter-list {
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  height: 100%;
+  margin: 0 30px 0 0;
+  min-width: 30vw;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateX(-30vw);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.filter-list:before {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 50%;
+  color: black;
+  content: '📋';
+  display: flex;
+  font-size: 20px;
+  font-weight: 900;
+  height: 10vh;
+  justify-content: center;
+  position: absolute;
+  right: -10vh;
+  top: 0;
+  width: 10vh;
+}
+
+.filter-list:hover {
+  transform: translateX(0);
+}
+
+.filter-list:hover:before {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.filter-list li {
+  box-shadow: 2px 2px 5px;
+  margin: 5px;
+  padding: 10px 5px;
+}
+
+.filter-list li button {
+  background: red;
+  border-radius: 50%;
+  color: white;
+  font-weight: 900;
+  height: 2vw;
+  margin: 0 10px;
+  width: 2vw;
+}
