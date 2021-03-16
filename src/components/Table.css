@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+
+/* Retirado do site https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr */
+td, th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child( even ) {
+  background-color: wheat;
+}
+
+th .col {
+  background-color: dimgray;
+  color: white;
+}
+
+table {
+  border: 2px solid rgb(200, 200, 200);
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
