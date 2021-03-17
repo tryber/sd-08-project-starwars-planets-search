@@ -1,0 +1,15 @@
+table {
+  border-collapse: collapse;
+  color: whitesmoke;
+  display: table;
+}
+
+tr {
+  display: table-row;
+}
+
+td, th {
+  border: 1px solid white;
+  display: table-cell;
+  padding: 10px;
+}
