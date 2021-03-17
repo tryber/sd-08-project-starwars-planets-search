@@ -1,0 +1,19 @@
+* {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header-table th {
+  border: 1px solid rgb(55, 55, 55);
+  color: rgb(55, 55, 55);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+td {
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 3px;
+}
