@@ -159,7 +159,7 @@ describe('2 - Filtre a tabela através de um texto, inserido num *campo de texto
   });
 });
 
-describe('3 - Crie um filtro para valores numéricos', () => {
+ describe('3 - Crie um filtro para valores numéricos', () => {
   beforeAll(mockFetch);
   beforeEach(cleanup);
 
@@ -249,7 +249,7 @@ describe('3 - Crie um filtro para valores numéricos', () => {
   });
 });
 
-describe('4 - Não utilize filtros repetidos', () => {
+/* describe('4 - Não utilize filtros repetidos', () => {
   beforeAll(mockFetch);
   beforeEach(cleanup);
 
@@ -364,4 +364,4 @@ describe('6 - Ordene as colunas de forma ascendente ou descendente', () => {
     const actual = planets.map(planet => planet.innerHTML);
     expect(actual).toEqual(expected);
   });
-});
+});*/
