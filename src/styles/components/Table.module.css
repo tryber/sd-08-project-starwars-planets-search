@@ -1,0 +1,22 @@
+.table {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.table thead {
+  background: #555;
+  color: white;
+}
+
+.table th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table tbody tr:nth-of-type( odd ) {
+  background-color: #ccc;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}

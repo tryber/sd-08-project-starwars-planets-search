@@ -1,0 +1,7 @@
+.nameFilterContainer {
+  display: flex;
+}
+
+.nameFilterContainer input {
+  flex: 1;
+}

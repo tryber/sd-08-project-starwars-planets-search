@@ -1,0 +1,29 @@
+.controlsContainer {
+  background-color: rgba(255, 109, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  padding: 5px;
+}
+
+.controls input, .controls button, select, label {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.controls > *:not( :last-child ) {
+  margin-bottom: 10px;
+}
+
+.controls > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 8px;
+}
