@@ -1,9 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from './Components/Header';
+import Table from './Components/Table';
+import FilterArea from './Components/FilterArea';
+import Provider from './Hooks/Provider';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <Provider>
+      <Header />
+      <FilterArea />
+      <Table />
+    </Provider>
   );
 }
 
