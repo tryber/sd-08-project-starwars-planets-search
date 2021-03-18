@@ -1,9 +1,20 @@
 import React from 'react';
-import './App.css';
+
+import Provider from './context/Provider';
+
+import FilterForm from './components/FilterForm';
+import PlanetsTable from './components/PlanetsTable';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <Provider>
+      <header>
+        <FilterForm />
+      </header>
+      <main>
+        <PlanetsTable />
+      </main>
+    </Provider>
   );
 }
 
