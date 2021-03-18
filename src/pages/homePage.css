@@ -1,0 +1,10 @@
+.table {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.table-head {
+  background-color: #2196f3;
+  color: black;
+}

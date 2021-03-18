@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap') ;
+
+* {
+  font-family: Niramit , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.forms {
+  background-color: #333;
+  display: flex;
+}
+
+.div-name-planet {
+  height: 100%;
+  padding: 20px 5px;
+  width: 50%;
+}
+
+.div-name-planet input {
+  background-color: #333;
+  border: none;
+  border-bottom: 2px solid #2196f3;
+  color: white;
+  height: 100%;
+  padding: 6px 5px;
+  width: 90%;
+}
+
+.filter-select input {
+  background-color: #333;
+  border: none;
+  border-bottom: 2px solid #2196f3;
+  color: white;
+  padding: 6px 10px;
+}
+
+.order input {
+  border: 2px solid #2196f3;
+  margin-left: 2px;
+  margin-top: 15px;
+}
+
+.div-name-planet input:focus {
+  border-bottom: 2px solid #2196f3;
+  outline: none;
+  transition: 0.2s;
+}
+
+.div-filter {
+  display: flex;
+  height: 100%;
+  padding: 20px 5px;
+  width: 30%;
+}
+
+.filter-select {
+  margin: 0 5px;
+}
+
+.filter-select select {
+  background-color: #333;
+  border: none;
+  border-bottom: 2px solid #2196f3;
+  color: white;
+  padding: 5px 20px;
+}
+
+.order select {
+  background-color: #333;
+  border: none;
+  border-bottom: 2px solid #2196f3;
+  color: white;
+  padding: 5px 20px;
+}
+
+.filter-select select:focus {
+  outline: none;
+}
+
+.filter-select input:focus {
+  outline: none;
+}
+
+.filter-select button {
+  background-color: #333;
+  border: 2px solid #2196f3;
+  border-radius: 5px;
+  color: white;
+  height: 100%;
+  padding: 5px 15px;
+}
+
+.div-order {
+  display: flex;
+  height: 100%;
+  margin-left: 200px;
+  padding: 20px 5px;
+  width: 50%;
+}
+
+.order button {
+  background-color: #333;
+  border: 2px solid #2196f3;
+  border-radius: 5px;
+  color: white;
+  height: 100%;
+  padding: 5px 15px;
+}
+
+.order {
+  margin: 0 5px;
+}
+
+.label-order {
+  color: white;
+  margin-left: 2px;
+  margin-right: 2px;
+}
