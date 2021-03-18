@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  font-family: BlinkMacSystemFont , Segoe UI , sans-serif;
+  margin: 0;
+
+}
+
+.header {
+  color: rgb(134, 134, 134);
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.title-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  padding-top: 70px;
+  text-align: center;
+}
+
+input, select {
+  color: rgb(95, 94, 94);
+  margin: rgb(95, 94, 94);
+}
+
+.inputs-number {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.button-filter {
+  background-color: white;
+  border: white;
+  color: rgb(68, 67, 67);
+  width: 60px;
+}
+
+.star-Wars-Image {
+  height: 10rem;
+  padding-top: 15px;
+  width: 10rem;
+}
+
+.selected-filter {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 35%;
+}

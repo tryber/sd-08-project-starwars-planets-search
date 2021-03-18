@@ -1,9 +1,16 @@
 import React from 'react';
-import './App.css';
+import Header from './component/Header';
+import SelectedFilter from './component/SelectedFilter';
+import Table from './component/Table';
+import StarWarsProvider from './provider/StarWarsProvider';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <StarWarsProvider>
+      <Header />
+      <SelectedFilter />
+      <Table />
+    </StarWarsProvider>
   );
 }
 
