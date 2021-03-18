@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
+import GlobalDataContext from './API/DataContext';
+import Table from './components/Table';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <GlobalDataContext>
+      <Table />
+    </GlobalDataContext>
   );
 }
 
