@@ -1,9 +1,16 @@
 import React from 'react';
-import './App.css';
+
+import Home from './components/Home';
+import PlanetsProvider from './context/PlanetsProvider';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <PlanetsProvider>
+      <span>Hello, App!</span>
+      <Home />
+    </PlanetsProvider>
   );
 }
 
