@@ -1,9 +1,23 @@
 import React from 'react';
+import PlanetsProvider from './context/PlanetsProvider';
+import Table from './components/Table';
+import Inputs from './components/Inputs';
+import ChipsFilters from './components/ChipsFilters';
 import './App.css';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <PlanetsProvider>
+      <header>
+        <Inputs />
+      </header>
+      <hr />
+      <ChipsFilters />
+      <hr />
+      <main>
+        <Table />
+      </main>
+    </PlanetsProvider>
   );
 }
 
