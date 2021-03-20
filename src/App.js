@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
+import Provider from './context/Provider';
+import Table from './components/Table';
+import FilterComponent from './components/FilterComponent';
 
-function App() {
+export default function App() {
   return (
-    <span>Hello, App!</span>
+    <Provider>
+      <FilterComponent />
+      <Table />
+    </Provider>
   );
 }
-
-export default App;
