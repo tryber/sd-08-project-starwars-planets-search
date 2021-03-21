@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url("skyGalaxy.png");
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+  font-family: 'Syne Mono', monospace;
+}
+
 .App {
   text-align: center;
 }

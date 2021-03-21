@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+h1 {
+  font-family: 'Syne Mono', monospace;
+  color: #ecb604;
+  font-size: 2.5em;
+  margin: 55px;
+}
+
+input, select, button {
+  border-radius: 10px;
+  background-color: #e0c527ea;
+  border-style: none;
+  padding: 10px;
+  margin: 10px;
+}
