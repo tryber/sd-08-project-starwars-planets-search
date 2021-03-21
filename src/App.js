@@ -1,9 +1,16 @@
 import React from 'react';
-import './App.css';
+import DataProvider from './context/DataProvider';
+import Table from './components/Table';
+import Inputs from './components/Inputs';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <DataProvider>
+      <div>
+        <Inputs />
+        <Table />
+      </div>
+    </DataProvider>
   );
 }
 
