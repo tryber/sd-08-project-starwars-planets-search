@@ -1,41 +1,94 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+:root {
+  --primary-color: #FBBF6B;
+  --secundary-color:#F6A400;
+  --tertiary-color: #63A09E;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--tertiary-color);
+  font-family: 'Ranchers', cursive;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-end;
+  text-align: center;
+  height: 70px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.icons-container {
+  margin-left: 5rem;
+}
+
+.title-container {
+  margin-left: 37rem;
+}
+
+.bb8 {
+  position: absolute;
+  right: 3.5vw;
+  top: 1vh;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-color);
+  height: 5rem;
+  border-radius: 2rem;
+  width: 50vw;
+  margin: 30px auto 0px auto;
+}
+
+.table-container {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  margin: 30px auto 0px;
+  width: 90vw;
+  border-radius: 1rem;
+  border-collapse: collapse;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+tr {
+  background-color: var(--primary-color);
 }
 
-.App-header {
-  align-items: center;
-  background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
+
+thead tr {
+  border-bottom: 30px solid var(--tertiary-color);
 }
 
-.App-link {
-  color: #61dafb;
+tbody tr {
+  border-bottom: 10px solid var(--tertiary-color);
 }
 
-@keyframes App-logo-spin {
-
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  padding: 3rem 1rem;
+  border-radius: 3px;
+  font-size: 21px;
+  letter-spacing: 1px;
 }
+
+td {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  max-width: 150px;
+  overflow: auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+
