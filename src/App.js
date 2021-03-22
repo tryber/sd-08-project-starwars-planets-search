@@ -1,9 +1,16 @@
 import React from 'react';
-import './App.css';
+import FilterByName from './components/FilterByName';
+import FilterByNumericValues from './components/FilterByNumericValues';
+import PlanetsDataTable from './components/PlanetsDataTable';
+import StarWarsProvider from './context/StarWarsProvider';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <StarWarsProvider>
+      <FilterByName />
+      <FilterByNumericValues />
+      <PlanetsDataTable />
+    </StarWarsProvider>
   );
 }
 
