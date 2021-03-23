@@ -1,0 +1,14 @@
+.Table {
+  border-collapse: collapse;
+}
+
+.Table th, td {
+  border: 1px solid black;
+  font-size: 11px;
+  text-align: center;
+}
+
+.Table th {
+  background-color: #333;
+  color: white;
+}
