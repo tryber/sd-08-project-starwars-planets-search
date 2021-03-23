@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import StarProvider from './context/StarProvider';
+import Table from './components/Table';
 
-function App() {
-  return (
-    <span>Hello, App!</span>
-  );
-}
+const App = () => (
+  <StarProvider>
+    <div>
+      <span>Hello, App!</span>
+      <Table />
+    </div>
+  </StarProvider>
+);
 
 export default App;
