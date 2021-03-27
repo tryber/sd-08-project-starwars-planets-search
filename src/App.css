@@ -39,3 +39,15 @@
     transform: rotate(360deg);
   }
 }
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+.div {
+  border: 1px solid black;
+  display: flex;
+  margin: 5px;
+  padding: 20px;
+}
