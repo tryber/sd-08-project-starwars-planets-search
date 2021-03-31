@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1"
   },
   "jest": {
@@ -22,10 +23,22 @@
     "test-coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -41,6 +54,12 @@
   },
   "devDependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
+    "@storybook/addon-actions": "^6.2.0",
+    "@storybook/addon-essentials": "^6.2.0",
+    "@storybook/addon-links": "^6.2.0",
+    "@storybook/node-logger": "^6.2.0",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.2.0",
     "eslint": "6.8.0",
     "eslint-config-trybe-frontend": "1.2.0",
     "stylelint": "^13.8.0",
