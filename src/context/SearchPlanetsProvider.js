@@ -5,20 +5,22 @@ import SearchPlanetsContext from './SearchPlanetsContext';
 import getPlanetsStarWars from '../services/api';
 
 const SearchPlanetsProvider = ({ children }) => {
-  const [planets, setPlanets] = useState([]);
+  const [planets, setPlanets] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     async function fetchPlanets() {
       const objectAPI = await getPlanetsStarWars();
-      const { results } = objectAPI;
-      console.log(results);
-      setPlanets(results);
+      // const { results } = objectAPI;
+      setPlanets(objectAPI);
+      setIsLoaded(true);
     }
     fetchPlanets();
   }, []);
 
   const context = {
     planets,
+    isLoaded,
   };
 
   return (
