@@ -1,10 +1,13 @@
 import React from 'react';
+import Table from './components/Table';
 import './App.css';
 
-function App() {
-  return (
-    <span>Hello, App!</span>
-  );
-}
+import SWProvider from './context/SWProvider';
+
+const App = () => (
+  <SWProvider>
+    <Table />
+  </SWProvider>
+);
 
 export default App;
