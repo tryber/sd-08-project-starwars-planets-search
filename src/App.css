@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.active-filters {
+  margin: 10px;
+}
+
+.exclude-filter {
+  margin: 0 10px;
+}
+
+.thead {
+  background-color: #282c34;
+  color: #61dafb;
+}
+
+.tbody {
+  color: #043746;
+}
+
 @media ( prefers-reduced-motion : no-preference ) {
 
   .App-logo {
