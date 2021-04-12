@@ -7,13 +7,6 @@
   pointer-events: none;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   align-items: center;
   background-color: #282c34;
@@ -38,4 +31,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  color: yellow;
+  font-family: Times New Roman , Times , serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+.star-wars-logo {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 20%;
+}
+
+body {
+  background-image: url('./images/bodyBackgroundImage.png');
+  background-size: cover;
+  color: yellow;
+  opacity: 0.8;
+  width: 100%;
+}
+
+table, th, td {
+  background: black;
+  border: 2px solid yellow;
+  border-style: groove;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.table {
+  margin: 50px;
+  overflow: auto;
+  width: 90%;
+}
+
+.filters-input {
+  display: flex;
+  justify-content: center;
+}
+
+.remove-x {
+  width: 20px;
+}
+
+select, input, button {
+  background-color: yellow;
+  border-radius: 5px;
+  color: black;
+  font-size: 20px;
+  opacity: 75%;
+  text-align: center;
+}
+
+button:hover {
+  background: white;
 }

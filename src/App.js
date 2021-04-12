@@ -1,9 +1,15 @@
 import React from 'react';
+import StarWarsPlanetsProvider from './context/StarWarsPlanetsProvider';
+import StarWarsPlanets from './pages/StarWarsPlanets';
 import './App.css';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <div className="App">
+      <StarWarsPlanetsProvider>
+        <StarWarsPlanets />
+      </StarWarsPlanetsProvider>
+    </div>
   );
 }
 
