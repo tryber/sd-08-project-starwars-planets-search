@@ -1,9 +1,16 @@
 import React from 'react';
 import './App.css';
+import { SwHeader, SwTable } from './components';
+import { ContextFromStarWarsProvider } from './contexts/ContextFromStarWars';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <ContextFromStarWarsProvider>
+      <div className="swContainer">
+        <SwHeader />
+        <SwTable />
+      </div>
+    </ContextFromStarWarsProvider>
   );
 }
 
