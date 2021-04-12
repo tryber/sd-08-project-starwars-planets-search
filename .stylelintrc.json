@@ -130,6 +130,16 @@
     "value-list-comma-space-after": "always",
     "value-list-comma-space-before": "always",
     "value-list-max-empty-lines": 0,
-    "value-no-vendor-prefix": true
+    "value-no-vendor-prefix": true,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ]
   }
 }
