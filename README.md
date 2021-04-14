@@ -327,4 +327,4 @@ Link: [Avaliação](https://be-trybe.typeform.com/to/ZTeR4IbH)
 
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no _README_. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
----
+----
