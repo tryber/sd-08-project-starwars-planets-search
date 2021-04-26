@@ -1,10 +1,16 @@
 import React from 'react';
+
+import StarWarsProvider from './context/StarWarsProvider';
+import Table from './components/Table';
+import Header from './components/Header';
+
 import './App.css';
 
-function App() {
-  return (
-    <span>Hello, App!</span>
-  );
-}
+const App = () => (
+  <StarWarsProvider>
+    <Header />
+    <Table />
+  </StarWarsProvider>
+);
 
 export default App;
