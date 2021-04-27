@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Provider from './data/Provider';
 import './App.css';
+import Home from './pages/Home';
 
-function App() {
-  return (
-    <span>Hello, App!</span>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Provider>
+        <Home />
+      </Provider>
+    );
+  }
 }
 
 export default App;
